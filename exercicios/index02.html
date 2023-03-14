@@ -1,0 +1,28 @@
+<!--Faça um calculo, para saber se a pessoa é estrangeira ou mora em seu páis-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de países</h1>
+    Informe o seu pais <input type="text" name="txtvel" id="txtvel"> 
+    <input type="button" value="Verificar" onclick="pais()">
+    <div id="res">
+    </div>
+   <script>
+      function pais(){
+        var p = window.document.getElementById('txtvel')
+        var resp = window.document.querySelector('div#res')
+        var res = String(p.value)
+        resp.innerHTML = `Você é do ${res}`
+        if(res == "Brasil" || res == "Brasileiro")
+        {resp.innerText = 'Você é Brasileiro'}
+      else{resp.innerText = 'Você é estrangeiro gay'}}
+ </script>
+</body>
+</html>

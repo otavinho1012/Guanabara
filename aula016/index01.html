@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function quadrado(n1, n2){
+           var c = n1 * n2;
+           if(c >= 7){
+              return `é maior ou igual a 7` 
+            }else{
+                return `é menor que 7`
+            }
+            return `O resultado é ${c}`
+      }
+      window.alert(quadrado(6,8))
+
+     //Recursividade
+      function fatorial(n){
+        if(n == 1){
+            return 1 
+        }else{
+            return n * fatorial(n-1)
+        }
+      }
+
+
+
+
+    </script>
+</body>
+</html>
